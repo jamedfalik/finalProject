@@ -51,12 +51,12 @@ body {
 
 a:link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -96,18 +96,17 @@ h1 {
   font-style: italic;
 }
 
-.social-media {
-  width: 200px;
-  padding: 25px;
-  margin: 10px auto 10px auto;
+#social-media {
+  text-align: center;
+  margin-top: 25px;
 }
 
-#twitter{
-  float: left;
+#social-media a img {
+  opacity: .25;
 }
 
-#linkedin{
-  float: right;
+#social-media a:hover img, #social-media a:focus img {
+  opacity: .6;
 }
 
 header {
