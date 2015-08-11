@@ -74,13 +74,13 @@ a:active {
 }
 
 .wrapper {
-  max-width: 1280px;
-  margin: auto;
+  max-width: 1024px;
+  margin: 0px auto;
 }
 
 .intro-text{
  padding-top: 25%;
- color: #fff0f0;
+ color:  rgba(255,255,255, 0.7);
  text-align: center;
 }
 
@@ -88,6 +88,7 @@ h1 {
   text-transform: uppercase;
   font-size: 4em;
   letter-spacing: .5em;
+  font-weight: bold;
   font-family:'Lato', sans-serif;
 }
 
@@ -103,6 +104,7 @@ h1 {
 
 #social-media a img {
   opacity: .25;
+  padding: 15px;
 }
 
 #social-media a:hover img, #social-media a:focus img {
@@ -111,7 +113,6 @@ h1 {
 
 header {
   background: #3FBFBF;
-  color: white;
 }
 
 nav {
@@ -127,7 +128,7 @@ nav {
 
 .logo {
   width: 65px;
-  margin: 5px auto 5px auto;
+  margin: 0px auto 0px auto;
   padding-top: 10px; 
   padding-bottom: 10px;
 }
@@ -141,8 +142,28 @@ nav {
 .content {
   background: #f0f0f0;
   height: 575px;
-
 }
+
+#icons {
+  width: 33%;
+  border: 1px solid #f0f0f0;
+  height: 287px;
+  background-color:blue;
+  float: left;
+}
+
+#icons p {
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+
+img.main-icons{
+  display: block;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
 
 footer {
   background: #3FBFBF;
