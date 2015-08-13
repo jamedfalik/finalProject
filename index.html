@@ -14,75 +14,65 @@
 	</head>
 
 	<body>
-		<div id="page-intro">
-			<div class="wrapper">
-				<div class="intro-text">
-					<h1>Jamed Falik</h1>
-					<hr />
-					<p>Data Visualization and Information Graphic Design</p>
-				</div>
-				<ul id="social-media">
-					<a href="http://www.twitter.com"><img src="images/twitter.png"></a>
-					<a href="http://www.linkedin.com"><img src="images/linkedin.png"></a>
-				</ul>
-			</div>
+		<div id="large-header">
+			<canvas id="demo-canvas"></canvas>
+				<h1 class="main-title">Jamed Falik <span class="thin">Data Visualization and Information Graphic Design</span></h1>
 		</div>
 		
-		<header>
-			<div class ="wrapper">
-				<nav>
-					<div class ="about"><a href="about.html">ABOUT</a>
-					</div>
-					<div class ="portfolio"><a href="portfolio.html">PORTFOLIO</a>
-					</div>
-				</nav>
-				<div class="logo">
-					<img src="images/mind.png"/>
+		<section>
+			<div id="header">
+				<div class ="wrapper">
+					<nav>
+						<a href="about.html">Origin Story</a>
+						<img src="images/mind.png"/>
+					</nav>
 				</div>
-			</div>
-		</header>	
+			</div>	
+			<div class ="wrapper">
+				<div class="grid clearfix">
+					<p>Explore my</p>
+					<h1>Portfolio</h1>
+					<div class="icons">
+						<a><a href="maps.html"><img src="images/earth.png" class="main-icons"/></a>
+						<p>Maps</p>
+					</div>
+					<div class="icons">
+						<a><a href="infographics.html"><img src="images/earth.png" class="main-icons"/></a>
+						<p>Infographics</p>
+					</div>
+					<div class="icons">
+						<a><a href="dataviz.html"><img src="images/earth.png" class="main-icons"/></a>
+						<p>Data Viz</p>
+					</div>
+					<div class="icons">
+						<a><a href="dashboards.html"><img src="images/earth.png" class="main-icons"/></a>
+						<p>Dashboards</p>
+					</div>
+					<div class="icons">
+						<a><a href="presentations.html"><img src="images/earth.png" class="main-icons"/></a>
+						<p>Presentations</p>
+					</div>
+					<div class="icons">
+						<a><a href="inprogress.html"><img src="images/earth.png" class="main-icons"/></a>
+						<p>In Progress</p>
+					</div>
+				</div>
 
-		<div class ="content">
-			<div class ="wrapper">
-				<div id="icons">
-					<img src="images/earth.png" class="main-icons"/>
-					<p>Caption</p>
-				</div>
-				<div id="icons">
-					<img src="images/earth.png" class="main-icons"/>
-					<p>Caption</p>
-				</div>
-				<div id="icons">
-					<img src="images/earth.png" class="main-icons"/>
-					<p>Caption</p>
-				</div>
-				<div id="icons">
-					<img src="images/earth.png" class="main-icons"/>
-					<p>Caption</p>
-				</div>
-				<div id="icons">
-					<img src="images/earth.png" class="main-icons"/>
-					<p>Caption</p>
-				</div>
-				<div id="icons">
-					<img src="images/earth.png" class="main-icons"/>
-					<p>Caption</p>
-				</div>
 			</div>
-		</div>
+		</section>
 
 		<footer>
 			<div class ="wrapper">
-				<div class="logo-small"><img src="images/gear.png"/></div>
 				<ul>
-					<li><a href="mailto:jamedfalik@gmail.com">Email</a></li>
+					<li><a href="mailto:jamedfalik@gmail.com">GET IN TOUCH</a></li>
 					<li><a href="resume.html">Resume</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
 				</ul>
 			</div>
 		</footer>
-
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
 		<script src='http://code.jquery.com/jquery-latest.min.js'></script>
-	  	<script src="index.js"></script>
+	  	<script src="js/index.js"></script>
 	</body>
 </html>
