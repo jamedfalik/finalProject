@@ -88,27 +88,29 @@ a:active {
   transform: translate3d(-50%,-50%,0);
   text-transform: uppercase;
   font-size: 50px;
-  letter-spacing: .3em;
+  letter-spacing: .2em;
   font-weight: bold;
   font-family:'Lato', sans-serif;
 }
 
 .main-title .thin {
-  /*display: inline-block;*/
+  display: inline-block;
   font-size: 22px;
   letter-spacing: .2em;
   text-transform: lowercase;
   font-weight: lighter;
 }
 
-#header {
-  background-color: black;
-}
+
 
 .arrow {
   position: absolute;
   top: 85%;
   left: 48%;
+}
+
+#header {
+  background-color: black;
 }
 
 nav {
@@ -172,7 +174,7 @@ section {
     letter-spacing: .3em;
 }
 
-.grid h1, aside h1 {
+.grid h1, main.homepage h1 {
   color: black;
   text-transform: uppercase;
   font-weight: bold;
@@ -201,29 +203,46 @@ img.main-icons{
   opacity: 0.6;
 }
 
-aside {
-  background: #c0c0c0;
+main.homepage {
+  /*background: #c0c0c0;*/
   font-size: 1em;
 }
 
-aside h1 {
+.small-logo {
+  width: 35px;
+  display: block;
+  margin: 0px auto;
+}
+
+.hr1 {
   text-align: center;
-  padding-top: 55px;
+  width: 100%;
+  line-height: 1px;
+  height: 4px;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 10px 0px;
+  box-sizing: content-box;*/
+}
+
+main.homepage h1 {
+  text-align: center;
+  padding-top: 35 px;
   letter-spacing: .1em;
 }
 
-aside p {
-  border-top: 1px solid black;
+main.homepage p {
   font-size: 25px;
   text-align: center;
-  padding: 55px 0 55px 0;
+  padding: 25px 0 85px 0;
+  line-height: 1.5em;
 }
 
 img.profile {
   display: block;
   margin: 0px auto;
   padding-top: 55px;
-
 }
 
 footer ul{
@@ -238,8 +257,28 @@ footer li{
   display: inline;
 }
 
+#portfolio h1 {
+  padding-top: 35px;
+  text-align: left;
+  float: left;
+}
 
+#portfolio p {
+  font-size: 20px;
+  text-align: left;
+  padding-top: 25px;
+}
 
+.map-icon-small {
+  width: 45px;
+  padding-top: 35px;
+  float: right;
+}
+
+.main-image {
+  width: 100%;
+  padding-top: 35px;
+}
 
 
 
@@ -258,7 +297,7 @@ nav img {
 }
 
 .arrow {
-  left: 42%;
+  left: 45%;
 }
 
 .icons {
