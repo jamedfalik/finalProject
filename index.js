@@ -1,3 +1,35 @@
+$(document).ready(function() {
+
+function shakeIt(){
+ 
+    $(".profile").velocity("callout.shake", {
+        duration: 500});
+};
+
+function rollIt(){
+    $(".profile").velocity({
+        translateX: "200px",
+        rotateZ: "45deg"
+    })
+    $(".profile").velocity("reverse");
+
+};
+
+
+$(".profile").hover(rollIt);
+$(".profile").hover(shakeIt);
+
+
+function scrollDown(){
+  $("#body").velocity("scroll", {
+    duration: 1000,
+    easing: "ease-in-out"});
+    };
+
+$(".arrow").click(scrollDown);
+
+});
+
 (function() {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;

@@ -50,20 +50,17 @@ body {
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: #D3D3D3;
 }
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: #D3D3D3;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -100,8 +97,6 @@ a:active {
   text-transform: lowercase;
   font-weight: lighter;
 }
-
-
 
 .arrow {
   position: absolute;
@@ -175,17 +170,17 @@ section {
     letter-spacing: .3em;
 }
 
-.grid h1, main.homepage h1 {
+.grid h1, .homepage h1 {
   color: black;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 35px;
   margin-bottom: 20px;
-  letter-spacing: .4em;
+  letter-spacing: .2em;
 }
 
 .icons p {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   font-weight: bold;
   text-align: center;
@@ -197,11 +192,14 @@ img.main-icons{
   margin: 0px auto;
   padding-top: 60px;
   opacity: .25;
+  transition: opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .icons a:hover img,
 .icons a:focus img {
   opacity: 0.6;
+  transform: scale(1.01);
 }
 
 main.homepage {
@@ -224,16 +222,16 @@ main.homepage {
   border-style: solid;
   border-color: #ccc;
   margin: 10px 0px;
-  box-sizing: content-box;*/
+  box-sizing: content-box;
 }
 
-main.homepage h1 {
+.homepage h1 {
   text-align: center;
   padding-top: 35 px;
   letter-spacing: .1em;
 }
 
-main.homepage p {
+.homepage p {
   font-size: 25px;
   text-align: center;
   padding: 25px 0 85px 0;
@@ -252,7 +250,7 @@ footer {
 
 footer ul {
   padding-top: 55px;
-  padding-bottom: 45px;
+  padding-bottom: 35px;
   text-align: center;
   font-size: 20px;
 }
@@ -262,16 +260,33 @@ footer li {
   display: inline;
 }
 
+.footer-contact {
+  text-align: center;
+  font-size: 15px;
+
+}
+
 #portfolio h1 {
   padding-top: 35px;
   text-align: left;
   float: left;
+  letter-spacing: none;
 }
+
+#portfolio h2 {
+  color: #191970;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 
 #portfolio p {
   font-size: 20px;
   text-align: left;
-  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 .map-icon-small {
@@ -282,17 +297,20 @@ footer li {
 
 .main-image {
   width: 100%;
-  padding-top: 35px;
+  padding-top: 25px;
+  padding-bottom: 35px;
 }
 
 .sample-image {
   padding: 10px;
   width: 337px;
   height: 287px;
-
 }
 
-
+#portfolio .back_button {
+  display: block;
+  text-align: right;
+}
 
 @media (max-width: 667px) {
 
