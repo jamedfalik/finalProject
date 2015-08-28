@@ -41,7 +41,7 @@ Author: Jamie B. Falik
 }
 
 /******************************************
-/* BASE STYLES
+/* Body and Links
 /*******************************************/
 
 body {
@@ -67,6 +67,10 @@ a:hover {
   max-width: 1024px;
   margin: 0px auto;
 }
+
+/******************************************
+/* Header
+/*******************************************/
 
 #large-header {
   background: url(../images/background.png);
@@ -136,25 +140,10 @@ section {
   background: #f0f0f0;
 }
 
-.icons {
-  width: 33%;
-  border: 1px solid #f0f0f0;
-  height: 287px;
-  /*background-color:blue;*/
-  float: left;
-  /* IE10+ */
-  background-image: -ms-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
-  /* Mozilla Firefox */
-  background-image: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
-  /* Opera */
-  background-image: -o-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1e5799), color-stop(100, #7db9e8));
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
-  /* W3C Markup */
-  background-image: linear-gradient(to bottom, #1e5799 0%, #7db9e8 100%);
-}
+/******************************************
+/* Grid and Icons
+/*******************************************/
+
 
 .grid {
   padding-top: 80px;
@@ -179,6 +168,26 @@ section {
   letter-spacing: .2em;
 }
 
+.icons {
+  width: 33%;
+  border: 1px solid #f0f0f0;
+  height: 287px;
+  /*background-color:blue;*/
+  float: left;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1e5799), color-stop(100, #7db9e8));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #1e5799 0%, #7db9e8 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom, #1e5799 0%, #7db9e8 100%);
+}
+
 .icons p {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -187,23 +196,26 @@ section {
   padding-top: 30px;
 }
 
-img.main-icons{
+img.main-icons {
   display: block;
   margin: 0px auto;
   padding-top: 60px;
-  opacity: .25;
-  transition: opacity 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  opacity: 0.25;
+/*  transition: opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;*/
 }
 
-.icons a:hover img,
-.icons a:focus img {
+/*.main-icons a:hover img,
+.main-icons a:focus img, {
   opacity: 0.6;
   transform: scale(1.01);
-}
+}*/
+
+/******************************************
+/* Profile
+/*******************************************/
 
 main.homepage {
-  /*background: #c0c0c0;*/
   font-size: 1em;
 }
 
@@ -244,6 +256,11 @@ img.profile {
   padding-top: 55px;
 }
 
+/******************************************
+/* Footer
+/*******************************************/
+
+
 footer {
   border-top: 1px solid #ccc;
 }
@@ -266,6 +283,10 @@ footer li {
 
 }
 
+/******************************************
+/* Portfolio Page
+/*******************************************/
+
 #portfolio h1 {
   padding-top: 35px;
   text-align: left;
@@ -281,7 +302,6 @@ footer li {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 
 #portfolio p {
   font-size: 20px;
@@ -301,10 +321,34 @@ footer li {
   padding-bottom: 35px;
 }
 
+/*Grid images on portfolio pages and hover effect*/
+
 .sample-image {
+  float: right;
   padding: 10px;
   width: 337px;
   height: 287px;
+}
+
+.textbox:hover {
+  opacity: .7;
+}
+
+.textbox {
+  width:337px;
+  height:287px;
+  position: absolute;
+  opacity:0;
+  background-color: rgba(0,0,0,0.75);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.text {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 85px;
 }
 
 #portfolio .back_button {

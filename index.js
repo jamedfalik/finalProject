@@ -15,7 +15,17 @@ function rollIt(){
 
 };
 
+function globe (){
+    $(".globe").velocity({
+        translateX: "+200px",
+        translateY: "25%",
+        colorRed: "50%",
+    })
+    $(".globe").velocity("reverse");
+};
 
+
+$(".globe").hover(globe);
 $(".profile").hover(rollIt);
 $(".profile").hover(shakeIt);
 
