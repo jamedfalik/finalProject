@@ -201,15 +201,8 @@ img.main-icons {
   margin: 0px auto;
   padding-top: 60px;
   opacity: 0.25;
-/*  transition: opacity 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;*/
 }
 
-/*.main-icons a:hover img,
-.main-icons a:focus img, {
-  opacity: 0.6;
-  transform: scale(1.01);
-}*/
 
 /******************************************
 /* Profile
@@ -331,7 +324,7 @@ footer li {
 }
 
 .textbox:hover {
-  opacity: .7;
+  opacity: .95;
 }
 
 .textbox {
@@ -344,12 +337,18 @@ footer li {
   transition: all 0.7s ease;
 }
 
-.text {
-  padding-top: 50px;
+p.text {
   color: white;
   text-align: center;
-  margin-top: 85px;
 }
+
+.glass {
+  margin-left: 125px;
+  margin-top: 100px;
+  opacity: .5;
+  width: 75px;
+}
+
 
 #portfolio .back_button {
   display: block;
