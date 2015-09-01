@@ -1,3 +1,45 @@
+$(document).ready(function() {
+
+function shakeIt(){
+ 
+    $(".profile").velocity("callout.shake", {
+        duration: 500});
+};
+
+function rollIt(){
+    $(".profile").velocity({
+        translateX: "200px",
+        rotateZ: "45deg"
+    })
+    $(".profile").velocity("reverse");
+
+};
+
+function globe (){
+    $(".globe").velocity({
+        translateX: "+200px",
+        translateY: "25%",
+        colorRed: "50%",
+    })
+    $(".globe").velocity("reverse");
+};
+
+
+$(".globe").hover(globe);
+$(".profile").hover(rollIt);
+$(".profile").hover(shakeIt);
+
+
+function scrollDown(){
+  $("#body").velocity("scroll", {
+    duration: 1000,
+    easing: "ease-in-out"});
+    };
+
+$(".arrow").click(scrollDown);
+
+});
+
 (function() {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
@@ -181,5 +223,5 @@
     function getDistance(p1, p2) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
-    
+
 })();

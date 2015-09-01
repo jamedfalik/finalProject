@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
-
+    <meta charset="utf-8">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
 		<title>Jamie's Final Project</title>
-
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	</head>
-
 	<body>
 		<div id="large-header">
-			<canvas id="demo-canvas"></canvas>
-				<h1 class="main-title">Jamed Falik <span class="thin">Data Visualization and Information Graphic Design</span></h1>
-		</div>
-		
-		<section>
 			<div id="header">
 				<div class ="wrapper">
-					<nav>
-						<a href="about.html">Origin Story</a>
-						<img src="images/mind.png"/>
-					</nav>
+					<a><img src="images/logo.png" class="logo-header" /></a>
+					<ul>
+							<li><a href="about.html">Contact</a></li>
+							<li><a href="#body" title="Check out my portfolio">Portfolio</a></li>
+					</ul>
 				</div>
-			</div>	
+			</div>
+			<canvas id="demo-canvas" ></canvas>
+			<span class="arrow"><img src="images/down_arrow.png"width="50" height="50"/></span>
+			<h1 class="main-title">Jamed Falik <br />
+				<span class="thin">Data Visualization and Information Graphic Design</span></h1>
+		</div>
+		<section id="body">
 			<div class ="wrapper">
 				<div class="grid clearfix">
 					<p>Explore my</p>
 					<h1>Portfolio</h1>
-					<div class="icons">
-						<a><a href="maps.html"><img src="images/earth.png" class="main-icons"/></a>
+					<div class="icons clearfix">
+						<a><a href="maps.html"><img src="images/globe_icon.png" class="main-icons globe"/></a>
 						<p>Maps</p>
 					</div>
-					<div class="icons">
-						<a><a href="infographics.html"><img src="images/earth.png" class="main-icons"/></a>
-						<p>Infographics</p>
-					</div>
-					<div class="icons">
-						<a><a href="dataviz.html"><img src="images/earth.png" class="main-icons"/></a>
-						<p>Data Viz</p>
-					</div>
-					<div class="icons">
-						<a><a href="dashboards.html"><img src="images/earth.png" class="main-icons"/></a>
-						<p>Dashboards</p>
-					</div>
-					<div class="icons">
-						<a><a href="presentations.html"><img src="images/earth.png" class="main-icons"/></a>
-						<p>Presentations</p>
-					</div>
-					<div class="icons">
-						<a><a href="inprogress.html"><img src="images/earth.png" class="main-icons"/></a>
-						<p>In Progress</p>
-					</div>
+						<div class="icons">
+							<a><a href="infographics.html"><img src="images/infographics_icon.png" class="main-icons"/></a>
+							<p>Infographics</p>
+						</div>
+						<div class="icons">
+							<a><a href="dataviz.html"><img src="images/dataviz_icon.png" class="main-icons"/></a>
+							<p>Data Viz</p>
+						</div>
+						<div class="icons">
+							<a><a href="dashboards.html"><img src="images/dashboard_icon.png" class="main-icons"/></a>
+							<p>Dashboards</p>
+						</div>
+						<div class="icons">
+							<a><a href="presentations.html"><img src="images/presentations_icon.png" class="main-icons"/></a>
+							<p>Presentations</p>
+						</div>
+						<div class="icons">
+							<a><a href="inprogress.html"><img src="images/workFlow_icon.png" class="main-icons"/></a>
+							<p>Work Flow</p>
+						</div>
 				</div>
-
 			</div>
 		</section>
-
-		<footer>
+		<main class="homepage">
 			<div class ="wrapper">
-				<ul>
-					<li><a href="mailto:jamedfalik@gmail.com">GET IN TOUCH</a></li>
-					<li><a href="resume.html">Resume</a></li>
-				</ul>
+				<a><img src="images/jamie.png" width="200" class="profile"/></a>
+				<h1>Data Artist</h1>
+				<hr class="hr1 clearfix"><img src="images/logo_black.png" class="small-logo" />
+				<p>What is a data artist? Let's start here. I transform complex data sets into compelling and creative visualizations to help deliver insights into the opportunities and challenges companies face. I mine, analyze, and visually display data to support evidence-based decision making through the use of data analysis, graphic design, and business intelligence tools. My data visualizations, information graphics, and interactive maps are used to communicate actionable ideas to key decision makers.</p>
 			</div>
+		</main>
+		<footer class="clearfix">
+			<ul>
+				<li><a><a href="XX.html"><img src="images/twitter.png" class="social-media"/></a></li>
+				<li><a><a href="XX.html"><img src="images/linkedin.png" class="social-media"/></a></li>
+				<li><a><a href="XX.html"><img src="images/pinterest.png" class="social-media"/></a></li>
+			</ul>
+			<p class="footer-contact">Jamed Falik. Designed in Washington, DC. Kept alive with black coffee</P>
 		</footer>
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
 		<script src='http://code.jquery.com/jquery-latest.min.js'></script>
-	  	<script src="js/index.js"></script>
+		<script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+	  <script src="index.js"></script>
 	</body>
 </html>
