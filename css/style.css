@@ -126,7 +126,7 @@ a:hover {
 
 .logo-header {
   width: 55px;
-  padding-top: 10px;
+  margin-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -200,7 +200,7 @@ img.main-icons {
   display: block;
   margin: 0px auto;
   padding-top: 60px;
-  opacity: 0.25;
+  opacity: 0.4;
 }
 
 
@@ -212,13 +212,25 @@ main.homepage {
   font-size: 1em;
 }
 
-.small-logo {
-  width: 35px;
-  display: block;
-  margin: 0px auto;
+.ornament{
+  position: relative;
+
 }
 
+
+.small-logo {
+  width: 25px;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  position: absolute;
+  top:-11px;
+  left:49%;
+}
+
+
 .hr1 {
+  display: block;
   text-align: center;
   width: 100%;
   line-height: 1px;
@@ -232,7 +244,8 @@ main.homepage {
 
 .homepage h1 {
   text-align: center;
-  padding-top: 35 px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   letter-spacing: .1em;
 }
 
