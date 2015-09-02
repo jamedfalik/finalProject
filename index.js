@@ -9,17 +9,6 @@ function logoClick (){
 $(".logo-header").hover(logoClick);
 
 
-
-function meJump(){
-    $(".profile").velocity({
-        translateZ: "200px",
-        rotateZ: "360deg"
-    });
-};
-
-$(".profile").hover(meJump);
-
-
 function scrollDown(){
   $("#body").velocity("scroll", {
     duration: "slow",
@@ -31,6 +20,8 @@ function scrollDown(){
 $(".arrow").click(scrollDown);
 
 });
+
+
 
 (function() {
 
