@@ -60,7 +60,6 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .wrapper {
@@ -200,7 +199,7 @@ img.main-icons {
   display: block;
   margin: 0px auto;
   padding-top: 60px;
-  opacity: 0.4;
+  opacity: .4;
 }
 
 
@@ -317,7 +316,7 @@ footer li {
 
 .map-icon-small {
   width: 45px;
-  padding-top: 35px;
+  padding-top: 30px;
   float: right;
 }
 
@@ -363,10 +362,18 @@ p.text {
 }
 
 
-#portfolio .back_button {
-  display: block;
-  text-align: right;
+.back_button {
+  float: right;
+  margin-right: 5px;
 }
+
+img.back_button {
+  margin-left: 15px;
+  opacity: .6;
+  float: right;
+  height: 15px;
+}
+
 
 @media (max-width: 667px) {
 
