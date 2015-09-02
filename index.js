@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 function logoClick (){
     $("circle").velocity({cx:100, cy:100});
-
+    $("circle").velocity("reverse", {delay: 5000, duration: 1000});
 };
 
 $(".logo-header").hover(logoClick);
