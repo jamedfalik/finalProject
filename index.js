@@ -1,39 +1,31 @@
 $(document).ready(function() {
 
-function shakeIt(){
- 
-    $(".profile").velocity("callout.shake", {
-        duration: 500});
+
+function logoClick (){
+    $("circle").velocity({cx:100, cy:100});
+
 };
 
-function rollIt(){
+$(".logo-header").hover(logoClick);
+
+
+
+function meJump(){
     $(".profile").velocity({
-        translateX: "200px",
-        rotateZ: "45deg"
-    })
-    $(".profile").velocity("reverse");
-
+        translateZ: "200px",
+        rotateZ: "360deg"
+    });
 };
 
-function globe (){
-    $(".globe").velocity({
-        translateX: "+200px",
-        translateY: "25%",
-        colorRed: "50%",
-    })
-    $(".globe").velocity("reverse");
-};
-
-
-$(".globe").hover(globe);
-$(".profile").hover(rollIt);
-$(".profile").hover(shakeIt);
+$(".profile").hover(meJump);
 
 
 function scrollDown(){
   $("#body").velocity("scroll", {
-    duration: 1000,
-    easing: "ease-in-out"});
+    duration: "slow",
+    easing: "easeInOutBack",
+    offset:"30px"});
+
     };
 
 $(".arrow").click(scrollDown);
